@@ -15,11 +15,37 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        applicationVariants.all {
+            it.buildConfigField "String", "OPEN_WEATHER_API_KEY", "\"" + getOpenWeatherApiKey() + "\""
+            it.buildConfigField "String", "OPEN_WEATHER_LAT", "\"" + getOpenWeatherLat() + "\""
+            it.buildConfigField "String", "OPEN_WEATHER_LONG", "\"" + getOpenWeatherLong() + "\""
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
+
+def getLocalProperties() {
+    Properties props = new Properties()
+    props.load(project.rootProject.file('local.properties').newDataInputStream())
+    return props
+}
+
+def getOpenWeatherApiKey() {
+    Properties props = getLocalProperties()
+    return props['openweather.apikey'].toString()
+}
+
+def getOpenWeatherLong() {
+    Properties props = getLocalProperties()
+    return props['openweather.lon'].toString()
+}
+
+def getOpenWeatherLat() {
+    Properties props = getLocalProperties()
+    return props['openweather.lat'].toString()
 }
 
 dependencies {
