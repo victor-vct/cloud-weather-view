@@ -1,0 +1,42 @@
+{
+    "coord": {
+        "lon": 0,
+        "lat": 0
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "ceu limpo",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 19.67,
+        "pressure": 1020,
+        "humidity": 82,
+        "temp_min": 19,
+        "temp_max": 20
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.1,
+        "deg": 150
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1542499200,
+    "sys": {
+        "type": 1,
+        "id": 4575,
+        "message": 0.4588,
+        "country": "BR",
+        "sunrise": 1542528727,
+        "sunset": 1542576642
+    },
+    "id": 3449701,
+    "name": "Sao Paulo",
+    "cod": 200
+}

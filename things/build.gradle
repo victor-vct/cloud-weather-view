@@ -64,5 +64,9 @@ dependencies {
     api "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
     api "com.squareup.retrofit2:converter-gson:$retrofit_version"
 
+    //Tests
     testImplementation "junit:junit:$junit_version"
+    testImplementation "com.squareup.okhttp:mockwebserver:$mock_webserver_version"
+    testImplementation "org.mockito:mockito-core:$mockito_core_version"
+    androidTestImplementation "org.mockito:mockito-android:$mockito_core_version"
 }
