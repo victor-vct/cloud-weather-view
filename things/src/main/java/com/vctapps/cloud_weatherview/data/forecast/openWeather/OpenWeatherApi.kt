@@ -7,7 +7,7 @@ import retrofit2.http.Query
 
 interface OpenWeatherApi {
 
-    @GET("/weather")
+    @GET("/data/2.5/weather")
     fun getWeather(@Query("APPID") appId: String,
                    @Query("lat") lat: String,
                    @Query("lon") long: String,
