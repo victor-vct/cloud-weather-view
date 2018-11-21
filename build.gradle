@@ -7,7 +7,10 @@ buildscript {
     ext.rx_java_version = '2.2.2'
     ext.rx_android_version = '2.1.0'
 
+    ext.koin_version = '1.0.1'
+
     ext.retrofit_version = '2.4.0'
+    ext.logging_interceptor_version = '3.9.1'
 
     ext.junit_version = '4.12'
     ext.espresso_runner_version = '1.0.2'
