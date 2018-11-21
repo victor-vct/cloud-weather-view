@@ -31,6 +31,7 @@ class OpenWeatherDataSource(private val api: OpenWeatherApi) : ForecastDataSourc
         val state = when (weatherId) {
             800 -> WeatherState.CLEAR
             801 -> WeatherState.FEW_CLOUDS
+            in 701..781 -> WeatherState.FEW_CLOUDS
             in 200..232 -> WeatherState.THUNDERSTORM
             in 300..321 -> WeatherState.RAIN
             in 500..531 -> WeatherState.RAIN
