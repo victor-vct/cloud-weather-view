@@ -28,7 +28,14 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$android_appcompat_version"
     implementation "com.android.support.constraint:constraint-layout:$constraint_version"
 
+    //Firebase
+    implementation "com.google.firebase:firebase-core:$firebase_version"
+    implementation "com.google.firebase:firebase-database:$firebase_version"
+
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "com.android.support.test:runner:$espresso_runner_version"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$espresso_version"
 }
+
+
+apply plugin: 'com.google.gms.google-services'
