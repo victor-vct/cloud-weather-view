@@ -55,6 +55,11 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.android.support:support-v4:$android_appcompat_version"
 
+    //Firebase
+    implementation "com.google.firebase:firebase-core:$firebase_version"
+    implementation "com.google.firebase:firebase-database:$firebase_version"
+
+
     //Koin
     implementation "org.koin:koin-android:$koin_version"
 
@@ -74,3 +79,5 @@ dependencies {
     testImplementation "org.mockito:mockito-core:$mockito_core_version"
     androidTestImplementation "org.mockito:mockito-android:$mockito_core_version"
 }
+
+apply plugin: 'com.google.gms.google-services'

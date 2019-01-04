@@ -1,8 +1,11 @@
 package com.vctapps.cloud_weatherview.di
 
+import com.google.firebase.database.FirebaseDatabase
 import com.google.gson.Gson
 import com.vctapps.cloud_weatherview.data.forecast.openWeather.OpenWeatherApi
 import com.vctapps.cloud_weatherview.data.forecast.openWeather.OpenWeatherDataSource
+import com.vctapps.cloud_weatherview.data.state.StateDataSource
+import com.vctapps.cloud_weatherview.data.state.firebase.FirebaseStateDataSource
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module.module
@@ -30,6 +33,12 @@ val networkModule = module {
                 .build()
     }
 
+    single {
+        provideStateDataSource()
+    }
+
 }
+
+fun provideStateDataSource(): StateDataSource = FirebaseStateDataSource(FirebaseDatabase.getInstance())
 
 fun createOpenWeatherApi(retrofit: Retrofit): OpenWeatherApi = retrofit.create(OpenWeatherApi::class.java)
