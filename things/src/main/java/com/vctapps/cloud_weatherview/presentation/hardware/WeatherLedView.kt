@@ -52,6 +52,9 @@ class WeatherLedView {
     }
 
     fun onChangeState(state: WeatherState) {
+        ledsBlinking = false
+        disableAll()
+
         when (state) {
             WeatherState.CLEAR -> showClearSky()
             WeatherState.CLOUDS -> showClouds()
@@ -60,6 +63,10 @@ class WeatherLedView {
             WeatherState.THUNDERSTORM -> showThunderstorm()
             WeatherState.ERROR -> showErrorLed()
         }
+    }
+
+    private fun disableAll() {
+        leds.forEach { led -> led.off() }
     }
 
     private fun showErrorLed() {
