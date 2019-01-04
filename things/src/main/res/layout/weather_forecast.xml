@@ -4,14 +4,25 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#333333">
+
+    <TextView
+        android:id="@+id/textWeatherTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="112sp"
+        android:textStyle="bold"
+        android:textColor="#CCCCCC"
+        tools:text="21ºC"/>
 
     <TextView
         android:id="@+id/textWeatherForecast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="112sp"
+        android:textSize="70sp"
         android:textStyle="bold"
-        tools:text="21ºC"/>
+        android:textColor="#CCCCCC"
+        tools:text="Chuva fraca"/>
 
 </LinearLayout>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Cloud - weather view</string>
+    <string name="error_message">ERROR :(</string>
+
+    <string name="clear">Ceu limpo</string>
+    <string name="few_clouds">Poucas nuvens</string>
+    <string name="clouds">Nublado</string>
+    <string name="rain">Chuva</string>
+    <string name="thunderstorm">Tempestade</string>
+
 </resources>
