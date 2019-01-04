@@ -16,6 +16,10 @@ Using a projector, can show temperature and weather state.
 
 The app just control cloud state using Firebase RealtimeDatabase. Just for tests and showcase.
 
+<p align="center">
+  <img src="assets/app_screenshot.jpg" align="center" width=250>
+</p>
+
 ## Prerequisites
 
 ### Software
