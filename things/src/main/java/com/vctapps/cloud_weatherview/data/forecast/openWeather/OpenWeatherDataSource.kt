@@ -2,6 +2,7 @@ package com.vctapps.cloud_weatherview.data.forecast.openWeather
 
 import com.vctapps.cloud_weatherview.BuildConfig
 import com.vctapps.cloud_weatherview.data.forecast.ForecastDataSource
+import com.vctapps.cloud_weatherview.data.forecast.openWeather.response.OpenWeatherRootResponse
 import com.vctapps.cloud_weatherview.domain.WeatherForecast
 import com.vctapps.cloud_weatherview.domain.WeatherState
 import io.reactivex.Single

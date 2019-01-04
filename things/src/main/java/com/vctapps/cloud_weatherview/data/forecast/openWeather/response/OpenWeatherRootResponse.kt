@@ -1,4 +1,4 @@
-package com.vctapps.cloud_weatherview.data.forecast.openWeather
+package com.vctapps.cloud_weatherview.data.forecast.openWeather.response
 
 import com.google.gson.annotations.SerializedName
 

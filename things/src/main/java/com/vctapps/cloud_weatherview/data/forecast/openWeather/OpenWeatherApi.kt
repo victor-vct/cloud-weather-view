@@ -1,5 +1,6 @@
 package com.vctapps.cloud_weatherview.data.forecast.openWeather
 
+import com.vctapps.cloud_weatherview.data.forecast.openWeather.response.OpenWeatherRootResponse
 import io.reactivex.Single
 import retrofit2.Response
 import retrofit2.http.GET
