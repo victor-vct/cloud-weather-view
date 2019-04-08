@@ -18,8 +18,8 @@ This project simulate a cloud with leds and cotton to show forecast weather. Whe
 
 There are two implementations:
 
-1. Raspberry Pi with Android Things
-2. NodeMCU ESP8266 with Arduino IDE
+1. [Raspberry Pi with Android Things](/android-things)
+2. [NodeMCU ESP8266 with Arduino IDE](/nodemcu/cloud_weather_view)
 
 ## The App
 
