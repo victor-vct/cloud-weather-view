@@ -1,7 +1,7 @@
 # Cloud weather view
 
 <p align="center">
-  <img src="../assets/cloud.gif" align="center" width=250>
+  <img src="../../assets/cloud.gif" align="center" width=250>
 </p>
 
 ## The Cloud
@@ -21,7 +21,7 @@ Only works with Raspiberry Pi. Comming soon for NodeMCU version :grin:
 The app just control cloud state using Firebase RealtimeDatabase. Just for tests and showcase.
 
 <p align="center">
-  <img src="../assets/app_screenshot.jpg" align="center" width=250>
+  <img src="../../assets/app_screenshot.jpg" align="center" width=250>
 </p>
 
 ## Prerequisites
